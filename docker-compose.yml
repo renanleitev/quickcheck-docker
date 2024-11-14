@@ -6,7 +6,7 @@ services:
   app-server:
     # Configuration for building the docker image for the backend service
     build:
-      context: lafepe-backend # Use an image built from the specified dockerfile in the `lafepe-backend` directory.
+      context: quickcheck
       dockerfile: Dockerfile
     ports:
       - "8080:8080" # Forward the exposed port 8080 on the container to port 8080 on the host machine
@@ -23,7 +23,7 @@ services:
   # Frontend Service 
   app-client:
     build:
-      context: lafepe-frontend # Use an image built from the specified dockerfile in the `lafepe-frontend` directory.
+      context: quickcheck-front
       dockerfile: Dockerfile
     ports:
       - "9090:80" # Forward the exposed port 80 on the container to port 80 on the host machine
