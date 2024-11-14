@@ -23,7 +23,7 @@ De dentro da pasta `quichcheck-docker`, faça o clone dos repositórios Front e 
 
 Front End
 	
-	git clone https://github.com/renanleitev/quichcheck-front.git
+	git clone https://github.com/renanleitev/quickcheck-front.git
 
 Back End
 
