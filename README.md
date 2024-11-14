@@ -17,7 +17,7 @@ Faça o clone deste repositório:
 
 Depois, acesse a pasta com o código (ou usando o terminal):
 
-    cd quichcheck-docker
+    cd quickcheck-docker
 
 De dentro da pasta `quichcheck-docker`, faça o clone dos repositórios Front e Back End:
 
