@@ -1,4 +1,4 @@
-# Lafepe Full Stack Application
+# QuickCheck Full Stack Application
 
 Aplicação Full Stack do aplicativo QuickCheck para registro e marcação de consultas.
 
