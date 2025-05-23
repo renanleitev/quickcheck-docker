@@ -1,90 +1,106 @@
 # QuickCheck Full Stack Application
 
-Aplicação Full Stack do aplicativo QuickCheck para registro e marcação de consultas.
+Full Stack application for QuickCheck, used for scheduling and registering appointments.
 
-## Estrutura
+## Structure
 
-1. Front End: React + Vite
-2. Back End: Spring Boot (Java)
-3. Banco de Dados: MySQL 
-4. Deploy: Docker Compose
+1. Front End: React + Vite  
+2. Back End: Spring Boot (Java)  
+3. Database: MySQL  
+4. Deployment: Docker Compose
 
-## Para obter os componentes
+## Getting the components
 
-Faça o clone deste repositório:
+Clone this repository:
 
-	git clone https://github.com/renanleitev/quickcheck-docker.git
+```bash
+git clone https://github.com/renanleitev/quickcheck-docker.git
+```
 
-Depois, acesse a pasta com o código (ou usando o terminal):
+Then navigate to the code directory (or use the terminal):
 
-    cd quickcheck-docker
+```bash
+cd quickcheck-docker
+```
 
-De dentro da pasta `quichcheck-docker`, faça o clone dos repositórios Front e Back End:
+From inside the `quickcheck-docker` folder, clone the Front End and Back End repositories:
 
-Front End
-	
-	git clone https://github.com/renanleitev/quickcheck-front.git
+**Front End**
 
-Back End
+```bash
+git clone https://github.com/renanleitev/quickcheck-front.git
+```
 
-	git clone https://github.com/i1iadeilton/quickcheck.git
+**Back End**
 
-## Para inserir os dados mockados
+```bash
+git clone https://github.com/i1iadeilton/quickcheck.git
+```
 
-Dê permissão para executar o script abaixo:
+## Inserting mock data
 
-	sudo chmod +x mock.sh
+Grant permission to run the script below:
 
-Execute o script para inserir os dados mockados:
+```bash
+sudo chmod +x mock.sh
+```
 
-	./mock.sh
+Run the script to insert mock data:
 
-Após isso, deverá receber uma mensagem no terminal informando que os dados mockados foram inseridos com sucesso.
+```bash
+./mock.sh
+```
 
-	"Substituição concluída. O arquivo original foi salvo como QuickcheckApplication.java.bak."
+After that, you should see a message in the terminal indicating that the mock data was successfully inserted:
 
-Caso ocorra algum erro, verifique se o arquivo `mock.sh` possui permissão de execução (chmod +x) ou se você fez o `git clone` corretamente do repositório `quickcheck`.
+```
+"Replacement complete. The original file was saved as QuickcheckApplication.java.bak."
+```
 
-## Para rodar em um servidor externo (AWS, Cloud, Oracle)
+If an error occurs, check if the `mock.sh` file has execution permission (`chmod +x`) or if you cloned the `quickcheck` repository correctly.
 
-Dê permissão para executar o script abaixo (ele irá trocar a url localhost pelo ip do servidor):
+## Running on an external server (AWS, Cloud, Oracle)
 
-	sudo chmod +x url.sh
+Grant permission to run the script below (it will replace `localhost` with the server IP):
 
-Passe o ip do servidor para o script alterar a URL da API backend no arquivo axios.js:
+```bash
+sudo chmod +x url.sh
+```
 
-	./url.sh <IP_SERVIDOR:8080>
+Pass the server IP to the script so it updates the backend API URL in the `axios.js` file:
 
-Obs: É importante que a porta `8080` esteja aberta no seu servidor
+```bash
+./url.sh <SERVER_IP:8080>
+```
 
-Após isso, deverá receber uma mensagem no terminal informando que a substituição da URL foi feita com sucesso.
+Note: It’s important that port `8080` is open on your server.
 
-	"Substituição concluída. O arquivo original foi salvo como axios.js.bak."
+After that, you should see a message in the terminal indicating the URL was successfully replaced:
 
-Caso ocorra algum erro, verifique se o arquivo `url.sh` possui permissão de execução (chmod +x) ou se você fez o `git clone` corretamente do repositório `quickcheck-front`.
+```
+"Replacement complete. The original file was saved as axios.js.bak."
+```
 
-## Para rodar os containers
+If an error occurs, check if the `url.sh` file has execution permission (`chmod +x`) or if you cloned the `quickcheck-front` repository correctly.
 
-	docker compose up
+## Running the containers
 
-Obs: Pode ser que demore alguns segundos ou até minutos para a aplicação iniciar, se não der certo após dois minutos, tente novamente.
+```bash
+docker compose up
+```
 
-Caso dê tudo certo, abra o seu navegador e acesse o site: `http://localhost:9090` ou `http://<IP_SERVIDOR>:9090`
+Note: It may take a few seconds or even minutes for the application to start. If it doesn't work after two minutes, try again.
 
-## Para deletar os containers
+If everything goes well, open your browser and go to: `http://localhost:9090` or `http://<SERVER_IP>:9090`
 
-	docker compose down
+## Deleting the containers
 
-## Para deletar todos os containers
+```bash
+docker compose down
+```
 
-	docker container prune -f
+## Deleting all containers
 
-## Equipe
-
-1. Flávio Raposo
-2. João Pedro Marinho
-3. José Adeilton
-4. Renan Leite Vieira
-5. Rian Vinícius
-6. Robério José
-7. Renan Vilabela
+```bash
+docker container prune -f
+```
